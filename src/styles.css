@@ -8,14 +8,30 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column;
   }
-  
+  .name{
+    position: absolute;
+    bottom: -15%;
+    right:0;
+    color:white;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+    
+  }
+ 
   #wrapper {
     aspect-ratio: 1.618;
     width: 90vmin;
     position: relative;
     /* border:1px solid blue; */
     background-color:#0a0a0a;
+    
   }
   #wrapper .shape {
     width: 30%;
@@ -25,7 +41,7 @@ body {
     position: absolute;
     transition: left, top, height, width, border-radius;
     transition-duration: 750ms;
-    transition-timing: linear;
+    /* transition-timing-function: ease-in; */
   }
   #wrapper > .shape:nth-child(1){
     background-color: #ff66b3;
