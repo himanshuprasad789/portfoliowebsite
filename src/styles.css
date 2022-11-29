@@ -40,8 +40,10 @@ body {
     /* border: 1px solid red; */
     position: absolute;
     transition: left, top, height, width, border-radius;
-    transition-duration: 750ms;
-    /* transition-timing-function: ease-in; */
+    transition-duration: 1000ms;
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    /* transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); */
   }
   #wrapper > .shape:nth-child(1){
     background-color: #ff66b3;
@@ -156,21 +158,21 @@ body {
     /* background-color:#ff66b3; */
   }
   #wrapper[data-configuration="3"] > .shape:nth-child(2){
-    left: 30%;
+     left: 30%;
     top: 50%;
-    width: 20%;
+    width: 16.67%;
     height: 50%;
     /* background-color:#ffee32; */
   }
   #wrapper[data-configuration="3"] > .shape:nth-child(3){
     left: 0;
     top: 0;
-    width: 20%;
+    width: 16.67%;
     height: 50%;
     /* background-color:#7d8597; */
   }
   #wrapper[data-configuration="3"] > .shape:nth-child(4){
-    left: 20%;
+    left: 16.67%;
     top: 0;
     width: 30%;
     height: 50%;
@@ -178,21 +180,21 @@ body {
   }
   
   #wrapper[data-configuration="3"] > .shape:nth-child(5){
-    left: 50%;
+    left: 46.67%;
     top: 0%;
-    width: 50%;
+    width: 53.33%;
     height: 100%;
   }
   #wrapper[data-configuration="3"] > .shape:nth-child(6){
-    left: 66.67%;
+    right:0;
     top: 50%;
-    width: 33.33%;
+    width: 30%;
     height: 50%;
   }
   #wrapper[data-configuration="3"] > .shape:nth-child(7){
     right: 0%;
     bottom: 0%;
-    width: 16.67%;
+    width: 15%;
     height: 25%;
   }
   
@@ -259,10 +261,12 @@ body {
     border-radius: 0 10rem 10rem 0;
   }
   #wrapper[data-roundness="3"] >.shape:nth-child(2){
+    border-top-left-radius: 10rem;
     border-bottom-left-radius: 10rem;
   }
   #wrapper[data-roundness="3"] >.shape:nth-child(3){
-    border-bottom-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
   }
   #wrapper[data-roundness="3"] >.shape:nth-child(4){
     border-radius: 10rem;
